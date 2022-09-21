@@ -4,7 +4,7 @@ import data from './data.json';
 
 
  //started this checked out options for how to inject <PhotoAlbum layout="rows" photos={photo} /> 
-export const AlbumCover = (props) {        // not sure if needed example: alt={props.user.name}
+export const AlbumCover = (props) => {        // not sure if needed example: alt={props.user.name}  It should be a function I think, i added an => -- Kaja
     return (
       <img className="Album-Cover"
         src={props.items.images}
